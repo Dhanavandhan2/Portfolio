@@ -100,13 +100,13 @@ Learned industry-standard IoT workflows
 B.Tech – Information Technology (2025)
 Vel Tech Multitech Dr. Rangarajan Dr. Sakunthala Engineering College, Chennai
 
-Diploma in Data Science & Analytics with Python – KAD Academy
+Diploma in Data Science & Analytics with Python – CADD Academy
 
 Diploma in Mechanical Engineering – DOTE, Chennai
 
 📜 Certifications & Achievements
 
-Diploma in Data Science with Python & Machine Learning – KAD Academy
+Diploma in Data Science with Python & Machine Learning – CADD Academy
 
 Python for Data Science – Vel Tech
 
