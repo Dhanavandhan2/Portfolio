@@ -1,89 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dhanavandhan | Portfolio</title>
-  <style>
-    body {font-family: Arial, sans-serif; margin: 0; background: #0f172a; color: #e5e7eb;}
-    header {padding: 40px; text-align: center; background: #020617;}
-    header h1 {font-size: 40px; margin-bottom: 10px;}
-    header p {color: #94a3b8;}
-    section {padding: 40px 80px;}
-    h2 {color: #38bdf8; margin-bottom: 20px;}
-    .skills span {display: inline-block; background: #1e293b; padding: 8px 12px; border-radius: 20px; margin: 6px;}
-    .card {background: #020617; padding: 20px; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.4);}    
-    footer {text-align: center; padding: 20px; background: #020617; color: #64748b;}
-    a {color: #38bdf8; text-decoration: none;}
-  </style>
+    <meta charset="UTF-8">
+    <title>Dhanavandhan L | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #0f172a;
+            color: #e5e7eb;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: #020617;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #94a3b8;
+        }
+
+        .links a {
+            margin: 8px;
+            padding: 10px 16px;
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            background: #2563eb;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .links a:hover {
+            background: #1d4ed8;
+        }
+
+        section {
+            padding: 40px 10%;
+        }
+
+        h2 {
+            color: #38bdf8;
+            border-bottom: 2px solid #1e293b;
+            padding-bottom: 6px;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #1e293b;
+            padding: 8px 14px;
+            border-radius: 20px;
+            margin: 6px;
+            font-size: 14px;
+        }
+
+        .project {
+            background: #020617;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #020617;
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 30px 5%;
+            }
+        }
+    </style>
 </head>
 <body>
 
 <header>
-  <h1>Dhanavandhan</h1>
-  <p>IT Graduate | Data Analytics | Python | Cloud & IoT</p>
-  <p>Chennai, Tamil Nadu · 📞 9080137787 · ✉️ dhanalingesh83@gmail.com</p>
-  <a href="https://linkedin.com/in/dhanavandhan-lingesh-9ab551312" target="_blank">LinkedIn</a>
+    <h1>Dhanavandhan L</h1>
+    <p>IT Graduate | Data Analyst | IoT Enthusiast</p>
+
+    <div class="links">
+        <a href="resume.pdf" download>📄 Download Resume</a>
+        <a href="https://www.linkedin.com/in/dhanavandhan-lingesh-9ab551312" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Dhanavandhan2" target="_blank">GitHub</a>
+        <a href="tel:+919080137787">📞 Call</a>
+        <a href="mailto:dhanalingesh83@gmail.com">✉ Email</a>
+    </div>
 </header>
 
 <section>
-  <h2>About Me</h2>
-  <p>Motivated IT graduate with strong skills in Python, data analysis, reporting, and cloud technologies. Passionate about solving business problems using data-driven insights and modern tools.</p>
+    <h2>About Me</h2>
+    <p>
+        B.Tech graduate in Information Technology with strong expertise in Python,
+        SQL, Data Analysis, and IoT systems. Experienced in data cleaning,
+        visualization, and building real-world projects using Power BI, Tableau,
+        and Raspberry Pi. A fast learner with strong problem-solving skills and
+        passion for technology-driven solutions.
+    </p>
 </section>
 
 <section>
-  <h2>Technical Skills</h2>
-  <div class="skills">
-    <span>Python</span><span>Java</span><span>C++</span><span>Excel</span><span>Power BI</span><span>Tableau</span>
-    <span>Pandas</span><span>NumPy</span><span>MySQL</span><span>MongoDB</span><span>AWS</span><span>Git & GitHub</span>
-  </div>
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>Python</span>
+        <span>C++</span>
+        <span>SQL</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>React (Basic)</span>
+        <span>Power BI</span>
+        <span>Tableau</span>
+        <span>Excel</span>
+        <span>Machine Learning</span>
+        <span>IoT</span>
+        <span>Raspberry Pi</span>
+        <span>Flask</span>
+    </div>
 </section>
 
 <section>
-  <h2>Projects</h2>
-  <div class="card">
-    <h3>Sales Data Analysis & Reporting</h3>
-    <p>Analyzed sales datasets using Python and Excel, created KPI dashboards in Power BI, and automated reports for business insights.</p>
-  </div>
-  <div class="card">
-    <h3>Cloud-Based Web Application</h3>
-    <p>Developed a Flask web app with MySQL and deployed it on AWS EC2 with S3 integration.</p>
-  </div>
-  <div class="card">
-    <h3>IoT Smart Waste Management System</h3>
-    <p>Built a real-time waste monitoring solution using NodeMCU and sensors. Won 2nd place at district-level competition.</p>
-  </div>
-</section>
+    <h2>Projects</h2>
 
-<section>
-  <h2>Internship Experience</h2>
-  <div class="card">
-    <h3>Data & IoT Intern – Eagle Technology Resources</h3>
-    <p>Automated reports using Excel and Power BI, analyzed IoT data, and supported dashboards.</p>
-  </div>
-  <div class="card">
-    <h3>IoT Intern – NSIC</h3>
-    <p>Worked with Raspberry Pi IoT prototypes and real-time monitoring systems.</p>
-  </div>
-</section>
+    <div class="project">
+        <h3>Crop Yield Analysis and Prediction</h3>
+        <p>
+            Analyzed agricultural data for rice, groundnut, and sugarcane.
+            Cleaned datasets, identified yield patterns, and visualized insights
+            using Python libraries.
+        </p>
+    </div>
 
-<section>
-  <h2>Education</h2>
-  <p><strong>B.Tech – Information Technology</strong> (2025)<br>Vel Tech Multitech Engineering College</p>
-  <p>Diploma in Data Science & Analytics – KAD Academy</p>
-</section>
+    <div class="project">
+        <h3>SAFEPARK – Smart Driver Safety System</h3>
+        <p>
+            IoT-based driver safety system using real-time health monitoring
+            and automated navigation to prevent accidents.
+        </p>
+    </div>
 
-<section>
-  <h2>Certifications</h2>
-  <ul>
-    <li>Diploma in Data Science with Python & ML</li>
-    <li>Certified in IoT Applications – NSIC</li>
-    <li>Python for Data Science – Vel Tech</li>
-  </ul>
+    <div class="project">
+        <h3>Global Mobile Sales Analysis</h3>
+        <p>
+            Cleaned and analyzed mobile sales data to understand pricing
+            and market trends using data visualization techniques.
+        </p>
+    </div>
 </section>
 
 <footer>
-  © 2025 Dhanavandhan · Portfolio Website
+    © 2026 Dhanavandhan L | Chennai, India
 </footer>
 
 </body>
