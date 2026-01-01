@@ -1,123 +1,83 @@
-# Portfolio
-👨‍💻 Dhanavandhan T
+# 🌐 Personal Portfolio – Dhanavandhan L
 
-📍 Chennai, Tamil Nadu
-📧 dhanalingesh83@gmail.com
+A modern, responsive **personal portfolio website** built using **HTML & CSS** to showcase my skills, projects, and professional profile.
 
-📞 9080137787
-🔗 LinkedIn
+🔗 **Live Demo:** (Add your GitHub Pages link here)
 
-🚀 About Me
+---
 
-Motivated and detail-oriented Information Technology graduate with a strong foundation in Python, data analysis, reporting, and cloud basics. I am passionate about solving real-world problems using data-driven insights and modern technologies. Actively seeking opportunities as a Trainee Associate / Data / IT Support role where I can grow and contribute effectively.
+## 👤 About Me
 
-🛠️ Technical Skills
+I am a **B.Tech Information Technology graduate** with strong skills in **Python, Data Analysis, Machine Learning, and IoT**.  
+I enjoy solving real-world problems using data-driven insights and smart systems.  
+I am a fast learner, adaptable team player, and passionate about technology.
 
-Programming Languages
+---
 
-Python, Java, C++
+## 🛠️ Skills
 
-Data Analysis & Visualization
+- **Languages:** Python, C++  
+- **Web Technologies:** HTML, CSS, React (Basic)  
+- **Data Tools:** Power BI, Tableau, Excel  
+- **Libraries & Frameworks:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Flask  
+- **Other:** Machine Learning, Data Analytics, IoT, REST APIs, Raspberry Pi  
 
-Excel (Advanced)
+---
 
-Power BI, Tableau
+## 📂 Projects
 
-Pandas, NumPy
+### 🌾 Crop Yield Analysis and Prediction
+- Analyzed agricultural data for rice, groundnut, and sugarcane  
+- Cleaned datasets and visualized yield patterns  
+- Tools: Python, Pandas, Matplotlib  
 
-Databases
+### 🚗 SAFEPARK – Smart Driver Safety System
+- IoT-based driver safety solution  
+- Real-time health monitoring and automated navigation  
+- Tools: Raspberry Pi, IoT Sensors  
 
-MySQL, MongoDB
+### 📱 Global Mobile Sales Analysis
+- Analyzed mobile phone pricing and feature trends  
+- Grouped data and visualized insights  
+- Tools: Python, Data Visualization  
 
-Cloud & Tools
+---
 
-AWS (EC2, S3 – Basics)
+## 📄 Resume
 
-Git, GitHub
+📥 **[Download Resume](resume.pdf)**
 
-Other Skills
+---
 
-Documentation
+## 🔗 Contact & Profiles
 
-Client Support
+- 📧 Email: [dhanalingesh83@gmail.com](mailto:dhanalingesh83@gmail.com)  
+- 📞 Phone: [+91 90801 37787](tel:+919080137787)  
+- 💼 LinkedIn: [linkedin.com/in/dhanavandhan-lingesh-9ab551312](https://www.linkedin.com/in/dhanavandhan-lingesh-9ab551312)  
+- 💻 GitHub: [github.com/Dhanavandhan2](https://github.com/Dhanavandhan2)
 
-Problem Solving
+---
 
-Analytical Thinking
+## 🚀 Deployment
 
-Communication
+This portfolio is deployed using **GitHub Pages**.
 
-📂 Projects
-📊 Sales Data Analysis & Business Reporting
+### Steps:
+1. Clone the repository
+2. Upload `index.html` and `resume.pdf`
+3. Go to **Settings → Pages**
+4. Select branch `main` → `/root`
+5. Save and access your live portfolio
 
-Cleaned and processed structured datasets using Python (Pandas, NumPy) and Excel
+---
 
-Performed trend analysis, KPI tracking, and forecasting
+## 📌 Future Enhancements
 
-Designed interactive Power BI dashboards for decision-making
+- Dark / Light Mode Toggle  
+- React / Next.js Version  
+- Project Images & GitHub Links  
+- Contact Form Integration  
 
-Improved reporting accuracy through automation
+---
 
-☁️ Cloud-Based Web Application
-
-Developed a Flask-based web application with MySQL
-
-Deployed application on AWS EC2 and managed files using AWS S3
-
-Gained hands-on experience in cloud deployment and version control
-
-♻️ IoT Smart Waste Management System
-
-Built an IoT solution using NodeMCU and sensors
-
-Enabled real-time waste level monitoring and visualization
-
-🏆 2nd Place – District-Level IoT Project Competition
-
-💼 Internship Experience
-🏢 Eagle Technology Resources – Chennai
-
-Data & IoT Intern (Apr 2024 – Jun 2024)
-
-Analyzed IoT-generated data using Python and Excel
-
-Automated reports using Excel & Power BI
-
-Assisted in documentation and dashboard preparation
-
-🏭 National Small Industries Corporation (NSIC) – Chennai
-
-IoT Intern (Mar 2022 – May 2022)
-
-Worked on Raspberry Pi-based IoT prototypes
-
-Supported real-time data testing and troubleshooting
-
-Learned industry-standard IoT workflows
-
-🎓 Education
-
-B.Tech – Information Technology (2025)
-Vel Tech Multitech Dr. Rangarajan Dr. Sakunthala Engineering College, Chennai
-
-Diploma in Data Science & Analytics with Python – CADD Academy
-
-Diploma in Mechanical Engineering – DOTE, Chennai
-
-📜 Certifications & Achievements
-
-Diploma in Data Science with Python & Machine Learning – CADD Academy
-
-Python for Data Science – Vel Tech
-
-IoT Applications Certification – NSIC
-
-🏆 2nd Place – District-Level IoT Competition
-
-🌐 Languages
-
-English
-
-Tamil
-
-Hindi
+⭐ If you like this project, feel free to **star the repository**!
