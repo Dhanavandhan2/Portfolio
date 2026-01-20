@@ -1,165 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Dhanavandhan L | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background: #0f172a;
-            color: #e5e7eb;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhanavandhan L  | Data Analyst & Python Developer</title>
 
-        header {
-            text-align: center;
-            padding: 40px 20px;
-            background: #020617;
-        }
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
+<style>
+:root{
+  --primary:#00f0ff;
+  --secondary:#ff00ff;
+  --accent:#22d3ee;
+  --dark:#0a0f1f;
+  --card:#0f1323cc;
+  --border:#1e293b;
+  --text:#e5e7eb;
+  --heading:#e5e7eb;
+}
+body{
+  margin:0;
+  padding:20px;               /* ✅ space on all sides */
+  font-family:'Inter', sans-serif;
+  color:var(--text);
+  background-color:var(--dark);
+  background-image:
+    url(https://img.sanishtech.com/u/a48000b41e92b0a4672b4e8a0b6870ce.jpeg),
+    radial-gradient(circle at 1px 1px, #00f0ff11 1px, transparent 0),
+    linear-gradient(135deg,#0a0f1f,#0a0f1f,#0a0f1f);
+  background-size: cover, 40px 40px, cover;
+  background-repeat: no-repeat, repeat, no-repeat;
+  background-attachment: fixed, fixed, fixed;
+  transition: all 0.4s ease;
+}
 
-        header p {
-            color: #94a3b8;
-        }
+/* Light mode */
+body.light-mode{
+  --primary:#6366f1;
+  --secondary:#22d3ee;
+  --dark:#f5f5f5;
+  --card:#ffffffcc;
+  --border:#cbd5e1;
+  --text:#020617;
+  --heading:#020617;
+}
 
-        .links a {
-            margin: 8px;
-            padding: 10px 16px;
-            display: inline-block;
-            color: #fff;
-            text-decoration: none;
-            background: #2563eb;
-            border-radius: 6px;
-            font-size: 14px;
-        }
+/* ================= MAIN CONTAINER ================= */
+.container{
+  max-width:1200px;
+  margin:0 auto;
+  padding:2.5rem;             /* ✅ inner spacing */
+}
 
-        .links a:hover {
-            background: #1d4ed8;
-        }
+/* ================= HEADER ================= */
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+  margin-bottom:3rem;         /* ✅ space below header */
+}
 
-        section {
-            padding: 40px 10%;
-        }
+.nav{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
 
-        h2 {
-            color: #38bdf8;
-            border-bottom: 2px solid #1e293b;
-            padding-bottom: 6px;
-        }
+.nav-item{
+  padding:8px 16px;
+  border:1px solid var(--border);
+  border-radius:8px;
+  color:var(--text);
+  text-decoration:none;
+  font-weight:600;
+  white-space:nowrap;
+  transition:.3s;
+}
 
-        .skills span {
-            display: inline-block;
-            background: #1e293b;
-            padding: 8px 14px;
-            border-radius: 20px;
-            margin: 6px;
-            font-size: 14px;
-        }
+.nav-item:hover{
+  background:var(--accent);
+  color:#020617;
+}
 
-        .project {
-            background: #020617;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 10px;
-        }
+#theme-toggle{
+  background:#f5f5f5;
+  color:black;
+  border:1px solid #000;
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #020617;
-            color: #64748b;
-            font-size: 14px;
-        }
+/* ================= HERO ================= */
+.hero{
+  text-align:center;
+  padding:5rem 2rem;          /* ✅ space left & right */
+  margin-bottom:4rem;
+}
 
-        @media (max-width: 768px) {
-            section {
-                padding: 30px 5%;
-            }
-        }
-    </style>
+.hero h1{
+  font-size:3.6rem;
+  font-family:'Poppins', sans-serif;
+  color:var(--heading);
+}
+
+.hero p{
+  font-size:1.2rem;
+  margin:1rem 0;
+}
+
+/* ================= SECTIONS ================= */
+section{
+  padding:4rem 2rem;          /* ✅ spacing on all sides */
+  margin-bottom:2rem;
+  border-bottom:1px solid var(--border);
+}
+
+/* Titles */
+.section-title{
+  font-size:2.3rem;
+  margin-bottom:2rem;
+  font-family:'Poppins', sans-serif;
+  background:linear-gradient(90deg,var(--primary),var(--secondary));
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+/* Cards */
+.card{
+  background:rgba(15,19,35,.85);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:2rem;               /* ✅ inner spacing */
+  margin-bottom:2rem;
+}
+
+/* Skills */
+.skill-tag{
+  display:inline-block;
+  padding:8px 14px;
+  border-radius:20px;
+  border:1px solid var(--border);
+  margin:6px;
+}
+
+/* Social */
+.social-item{
+  padding:10px 18px;
+  border-radius:10px;
+  border:1px solid var(--border);
+  color:var(--text);
+  text-decoration:none;
+  margin:5px;
+  display:inline-block;
+}
+
+/* Download */
+.download-btn{
+  display:inline-block;
+  margin-top:1rem;
+  padding:10px 18px;
+  border-radius:10px;
+  background:var(--secondary);
+  color:#020617;
+  font-weight:600;
+  text-decoration:none;
+}
+
+/* Footer */
+footer{
+  text-align:center;
+  padding:3rem 1rem;          /* ✅ space top/bottom */
+  opacity:.7;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width:768px){
+  body{
+    padding:10px;             /* tighter space on mobile */
+  }
+
+  .header{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .nav{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .container{
+    padding:1.5rem;
+  }
+}
+</style>
 </head>
+
 <body>
+<div class="container">
 
-<header>
-    <h1>Dhanavandhan L</h1>
-    <p>IT Graduate | Data Analyst | IoT Enthusiast</p>
+  <header class="header">
+    <h2 class="logo">KS</h2>
 
-    <div class="links">
-        <a href="DHANAVANDHAN RESUME.pdf" download>📄 Resume</a>
-        <a href="https://www.linkedin.com/in/dhanavandhan-lingesh-9ab551312" target="_blank">LinkedIn</a>
-        <a href="https://github.com/Dhanavandhan2" target="_blank">GitHub</a>
-        <a href="tel:+919080137787">📞 Call</a>
-        <a href="mailto:dhanalingesh83@gmail.com">✉ Email</a>
-    </div>
-</header>
+    <nav class="nav">
+      <a href="#about" class="nav-item">About</a>
+      <a href="#projects" class="nav-item">Projects</a>
+      <a href="#skills" class="nav-item">Skills</a>
+      <a href="#achievements" class="nav-item">Achievements</a>
+      <a href="#volunteer" class="nav-item">Volunteer</a>
+      <a href="#workspace" class="nav-item">Workspace</a>
+      <a href="#contact" class="nav-item">Contact</a>
+    </nav>
+  </header>
 
-<section>
-    <h2>About Me</h2>
-    <p>
-        B.Tech graduate in Information Technology with strong expertise in Python,
-        SQL, Data Analysis, and IoT systems. Experienced in data cleaning,
-        visualization, and building real-world projects using Power BI, Tableau,
-        and Raspberry Pi. A fast learner with strong problem-solving skills and
-        passion for technology-driven solutions.
-    </p>
+</div>
+
+<section class="hero">
+<h1>Dhanavandhan L</h1>
+<p>Data Science  | Python Developer | Data Analyst | Python Developer | Machine Learning & IoT | Front-End Developer</p>
+<a href="DHANAVANDHAN RESUME.pdf" download class="download-btn">
+<i class="fas fa-download"></i> Download Resume
+</a>
 </section>
 
-<section>
-    <h2>Skills</h2>
-    <div class="skills">
-        <span>Python</span>
-        <span>C++</span>
-        <span>SQL</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>React (Basic)</span>
-        <span>Power BI</span>
-        <span>Tableau</span>
-        <span>Excel</span>
-        <span>Machine Learning</span>
-        <span>IoT</span>
-        <span>Raspberry Pi</span>
-        <span>Flask</span>
-    </div>
+<!-- About Me -->
+<section id="about">
+<h2 class="section-title">About Me</h2>
+<div class="card">
+<p>
+B.Tech graduate in <strong>Information Technology</strong> with hands-on experience in
+<strong>Python, SQL, Data Analysis, Machine Learning, and Data Visualization</strong>.
+Strong problem-solving mindset with interest in tech-driven solutions.
+</p>
+</div>
+<div class="card">
+<h3>Education</h3>
+<p><strong>B.Tech – Information Technology</strong><br>Vel Tech Multi Tech Engineering College (2025)</p>
+<p><strong>Diploma – Mechanical Engineering</strong><br>Shri Sitheswarar Polytechnic College (2021)</p>
+</div>
+<div class="card">
+<h3>Mission</h3>
+<p>
+To design scalable, intelligent systems that leverage data and AI to solve
+real-world problems in agriculture, healthcare, and analytics.
+</p>
+</div>
 </section>
 
-<section>
-    <h2>Projects</h2>
+<!-- Projects -->
+<section id="projects">
+<h2 class="section-title">Projects</h2>
+<div class="card">
+<h3>Crop Yield Prediction Using Weather Data</h3>
+<ul>
+<li>Analyzed rainfall, temperature, humidity, and wind speed data</li>
+<li>Performed data preprocessing and exploratory analysis</li>
+<li>Visualized correlations affecting crop productivity</li>
+<li>Designed ML-ready prediction workflow</li>
+</ul>
+<p><strong>Tech:</strong> Python, Pandas, NumPy, Matplotlib, Seaborn</p>
+</div>
 
-    <div class="project">
-        <h3>Crop Yield Analysis and Prediction</h3>
-        <p>
-            Analyzed agricultural data for rice, groundnut, and sugarcane.
-            Cleaned datasets, identified yield patterns, and visualized insights
-            using Python libraries.
-        </p>
-    </div>
+<div class="card">
+<h3>Global Mobile Sales Analysis & Prediction</h3>
+<ul>
+<li>Analyzed 1,000+ mobile sales records</li>
+<li>Applied K-Means clustering for customer segmentation</li>
+<li>Identified pricing and brand performance trends</li>
+</ul>
+<p><strong>Tech:</strong> Python, Pandas, Scikit-learn</p>
+</div>
 
-    <div class="project">
-        <h3>SAFEPARK – Smart Driver Safety System</h3>
-        <p>
-            IoT-based driver safety system using real-time health monitoring
-            and automated navigation to prevent accidents.
-        </p>
-    </div>
+<div class="card">
+<h3>SAFEPARK – Smart Driver Safety System</h3>
+<ul>
+<li>Developed a smart driver safety system to monitor driver behavior and reduce accident risks.</li>
+<li>Integrated sensors and real-time alerts to detect unsafe driving conditions.</li>
+<li>Improved road safety by providing timely warnings and preventive assistance to drivers.</li>
+</ul>
+<p><strong>Tech:</strong> Python, IoT, Raspberry Pi</p>
+</div>
 
-    <div class="project">
-        <h3>Global Mobile Sales Analysis</h3>
-        <p>
-            Cleaned and analyzed mobile sales data to understand pricing
-            and market trends using data visualization techniques.
-        </p>
-    </div>
+<div class="card">
+<h3>Library Management System (RFID Based)</h3>
+<ul>
+<li>GUI-based system for issuing and returning books</li>
+<li>RFID integration to automate tracking</li>
+<li>Secure librarian access and record management</li>
+</ul>
+<p><strong>Tech:</strong> Python, Tkinter, RFID, SQLite</p>
+</div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+<h2 class="section-title">Skills</h2>
+<div>
+<span class="skill-tag">Python</span>
+<span class="skill-tag">SQL</span>
+<span class="skill-tag">Data Analysis</span>
+<span class="skill-tag">EDA</span>
+<span class="skill-tag">Machine Learning</span>
+<span class="skill-tag">Power BI</span>
+<span class="skill-tag">Tableau</span>
+<span class="skill-tag">Pandas</span>
+<span class="skill-tag">NumPy</span>
+<span class="skill-tag">Matplotlib</span>
+<span class="skill-tag">Seaborn</span>
+<span class="skill-tag">IoT</span>
+<span class="skill-tag">CSS</span>
+<span class="skill-tag">Data Cleaning & Preprocessing</span>
+<span class="skill-tag">Exploratory Data Analysis (EDA)</span>
+<span class="skill-tag">Microsoft Excel</span>
+<span class="skill-tag">Front-End Development</span>
+<span class="skill-tag">Basic JavaScript Interactivity</span>
+<span class="skill-tag">HTML/CSS Page Creation</span>
+<span class="skill-tag">Website Layout & Styling</span>
+<span class="skill-tag">Responsive Web Design</span>
+</div>
+</section>
+
+<!-- Achievements -->
+<section id="achievements">
+<h2 class="section-title">Achievements & Certifications</h2>
+<div class="card">
+<ul>
+<li>Final Year Project won Second Prize at SRM University, Kattankulathur</li>
+<li>Vice President – Student Chamber, JCI Ranipet</li>
+<li>Python Developer Certification (Engineering Mock – 2025)</li>
+<li>Diploma in Data Science – LIVEWire Academy (2025)</li>
+<li>AWS Solution Architect Associate – CADD CAMM (2024)</li>
+</ul>
+</div>
+</section>
+
+<!-- Volunteer -->
+<section id="volunteer">
+<h2 class="section-title">Volunteer Experience</h2>
+<div class="card">
+<ul>
+<li>NCC Cadet, National Cadet Corps (School Level)</li>
+<li>Participant, Government Environmental Awareness Programs</li>
+<li>Vice President, Students’ Junior Chamber – JCI Ranipet</li>
+</ul>
+</div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+<h2 class="section-title">Contact</h2>
+<a href="mailto:dhanalingesh83@gmail.com" class="social-item">
+<i class="fas fa-envelope"></i> Email
+</a>
+<a href="https://github.com/Dhanavandhan2" class="social-item">
+<i class="fab fa-github"></i> GitHub
+</a>
+<a href="https://www.linkedin.com/in/dhanavandhan-lingesh-9ab551312" class="social-item">
+<i class="fab fa-linkedin"></i> LinkedIn
+</a>
 </section>
 
 <footer>
-    © 2026 Dhanavandhan L | Chennai, India
+© 2025 Dhanavandhan L | IT/Tech Portfolio
 </footer>
 
+</div>
+
+<script>
+// Dark/Light Mode Toggle
+const toggle = document.getElementById('theme-toggle');
+toggle.addEventListener('click', () => {
+  document.body.classList.toggle('light-mode');
+});
+</script>
 </body>
 </html>
